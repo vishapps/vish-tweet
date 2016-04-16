@@ -1,11 +1,10 @@
+<% if user_signed_in? %>
 <div class="panel panel-default post-form-panel">
     <div class="panel-body row">
-      
       	<div class="col-sm-1">
           <img src="/avatar.jpg" class="rounded-img" height="35px" width="35px"></img>
         </div>
         <div class="col-sm-11">
-        
         <%= form_for(@newPost) do |f| %>
 
           <div class="field" style="margin-left: 10px;">
@@ -14,7 +13,7 @@
           </div>
 
         <% end %>        
- 
       </div>
   </div>
 </div>
+<% end %>
