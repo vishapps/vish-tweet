@@ -27,3 +27,36 @@ $ git push<br>
 If you have Heroku, deploy to Heroku<br>
 $ git push heroku<br>
 $ heroku run rake db:migrate<br>
+
+=> Create pages (blow command will create a folder & 4 pages in views/layout/pages folder and also crerates a rb file in controllers (pages_controller.rb))<br>
+$ rails g controller pages index home profile explore<br>
+
+=> Define root URL in routes.rb file-(This will indicate root page is index)   <br>
+-  root 'pages#index'<br>
+=> To show all the pages, difine all the URLs in routs.rb files like-   <br>
+  get '/home' => 'pages#home'<br>
+  get '/profile' => 'pages#profile'<br>
+  get '/explore' => 'pages#explore'<br>
+
+Covered topics are-<br>
+Working with Bootstrap<br>
+Building Navigation Bar<br>
+working on profile page<br>
+User Authantication with Devise<br>
+Dynamic Navigation <br>
+Adding User_Name function in users table of Devise (adding a column in database)<br>
+Making form so people can put their user name when they sign in<br>
+Implement routing so URL coresponds with username<br>
+Bulding model and control to represent tweets, aka posts and adding some velidation so tweets are 140 	characters or less order by descending dates so the most recent ones are always top.<br>
+Showing the tweets<br>
+Making form for post or tweets<br>
+Styling and Showing Logo<br>
+Showing Logo<br>
+Adding image in profile name (avatar)<br>
+Working on Landing page & guest navigation<br>
+Add style in Home Page & Tweet Form<br>
+Styling and working on Left and Right Panels<br>
+Styling user profile page, profile banner and left-right panel<br>
+Implementing Follower and Following relationship<br>
+Tuning up to show posts correctly in all pages and followers and posts to show right numbers<br>
+Styling the forms (Devise- Login, sign up, Edit profile)<br>
