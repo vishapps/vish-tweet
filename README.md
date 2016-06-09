@@ -14,17 +14,10 @@ $ git remote set-url origin --add git@bitbucket.org:Adhikariv/vish-twitt.git (to
 $ git add -A  (stages All fies)<br>
 $ git commit -m "................."<br>
 
-If you have test invironment,<br>
-$ bundle exec rake test<br>
-
-If you have more braches,<br>
-$ git checkout master<br>
-$ git merge ............(branch name)<br>
-
 Then push up to the remote repositoris<br>
 $ git push<br>
 
-If you have Heroku, deploy to Heroku<br>
+If you are deploying to Heroku-<br>
 $ git push heroku<br>
 $ heroku run rake db:migrate<br>
 
